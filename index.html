@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Travel authorization Form</title>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+<form id="form-order">
+<h1 id="cabecera">Travel authorization Form</h1>
+<h3 id="subtitulo1">Sección A: Información del cliente</h3>
+<hr size="2px" color="black" />
+<section>
+       <h5> Formulario Login</h5>
+       <h6>valide sus datos<h6>
+       <input type="text" name="usuario" value="" placeholder= "Usuario" required="">
+       <input type="password" name="contraseña" value="" placeholder= "Contraseña" required="">
+       <input type="submit" name="" value="ingresar">
+   </section>
+   <p id="firstpart">
+<p>
+<label for="cargo">Cargo:</label>
+<input style="text-transform:uppercase;" type="text" name="cargo" id="cargo" minlength="4" maxlength="100" size="35px"
+autofocus
+autocomplete
+placeholder="(ejm: diseñador)"
+required>
+</p>
+<p>
+<label for="name">Nombre:</label>
+<input style="text-transform:uppercase;" type="text" name="name" id="name" minlength="4" maxlength="100" size="35px"
+autofocus
+autocomplete
+placeholder="(ejm: Fernando)"
+required>
+</p>
+<p>
+<label for="primerapellido">Primer apellido:</label>
+<input style="text-transform:uppercase;" type="text" name="primerapellido" id="primerapellido"
+minlength="4" maxlength="100" size="35px"
+autofocus
+autocomplete
+placeholder="(ejm: Sanchez)"
+required>
+</p>
+<p>
+
+<label for="segundoapellido">Segundo apellido:</label>
+<input style="text-transform:uppercase;" type="text" name="segundoapellido" id="segundoapellido" size="35px"
+minlength="4" maxlength="100"
+autofocus
+autocomplete
+placeholder="(ejm: Berru)"
+required>
+</p>
+<p>
+<label for="correo">Correo electrónico:</label>
+<input type="email" name="correo" id="correo"
+required size="35px"
+autofocus
+placeholder="(ej. apellido@gmail.com)"
+autocomplete>
+</p>
+<p>
+<label for="telefono">Número de teléfono:</label>
+<input type="number" name="telefono" id="telefono"
+maxlength="9"
+autofocus
+autocomplete
+placeholder="999999999"
+required>
+</p>
+</p>
+<br>
+<h3 id="subtitulo2">Sección B: Información del viaje</h3>
+<hr size="2px" color="black" />
+<div id="gastos">
+<p >
+<label >Gastos adicionales estimados:</label>
+</p>
+<p>
+  <label>Alquiler de coche</label>
+ <input type="number" name="numero" value="x/2=0" maxlength="600" minlength="100">
+
+
+</p><meta name="viewport" content="width=device-width, initial-scale=1">
+<p >
+<label  for="hotel">Hotel:</label>
+<input type="text" name="hotel" id="hotel">
+
+</p>
+
+<p >
+<label  for="comidas">Comidas:</label>
+<input type="number" name="comidas" id="comidas">
+</p>
+<p >
+<label  for="totalestimado">Total estimado: </label><input type="text" name="totalestimado" id="totalestimado"
+placeholder="0.00€">
+
+</div>
+
+<p>
+<label id="alineacion" for="aerolinea">Nombre de la aerolínea:</label>
+<select name="aerolinea" id="aerolinea" title="Seleccione una aerolínea">
+<option value="Seleccione una aerolínea">--Seleccione una aerolínea--</option>
+<option value="Peruvian Airlines">Peruvian Airlines</option>
+<option value="Avianca">Avianca</option>
+<option value="LATAM Airlines">LATAM Airlines</option>
+<option value="Ulendo Airlink">Ulendo Airlink</option>
+<option value="Copa Airlines">Copa Airlines</option>
+<option value="American Airlines">American Airlines</option>
+<option value="Air Europa">Air Europa</option>
+</select>
+</p>
+
+</p>
+<p>
+<label id="alineacion1" for="destino">Destino:</label><input type="text" name="destino" id="destino" placeholder="ejm: Cusco"><br>
+<label id="alineacion1">Fecha de salida:⠀</label><input for="fecha" type="date" value="2018-07-22"><br>
+<label id="alineacion1">Fecha de regreso: </label><input for="fecha" type="date" value="2018-07-22"><br>
+<label id="alineacion1" for="costoestimado">Coste estimado:</label>
+<input type="number" name="costoestimado" id="costoestimado" min="100" max="1000"><br><br><br><br><br>
+<div id ="metododepago"> Metodo de pago utilizado:<br>
+    <label>Metalico</label><input type="radio" name="p1" value="1"><br>
+    <label>Tarjeta de credito</label><input type="radio" name="p1" value="1"> <br>
+    <label>Cheque</label><input type="radio" name="p1" value="1">
+  </div>
+<label id="alineacion1" for="visit">¿Incluye la visita al cliente?</label><input type="checkbox" name="visit"><br>
+
+
+</p>
+
+<br><br><br><br><br>
+  <p>  
+<label>Proposito de Viaje:<br><textarea name="mensaje" rows="4" cols="80"></textarea></label>
+</p>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Checked checkbox
+  </label>
+</div>
+  <input id="button" type="submit" name="Enviar" id="Enviar">
+</body>
+</html>
